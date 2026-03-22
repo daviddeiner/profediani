@@ -1,115 +1,134 @@
+/* ===== GENERAL ===== */
 body{
-
-font-family: Arial, sans-serif;
-background:#f5f5f5;
-margin:0;
-
+    font-family: Arial, sans-serif;
+    margin:0;
+    background:#f5f5f5;
 }
 
+/* ===== HEADER ===== */
 header{
-
-background:#0057b8;
-color:white;
-text-align:center;
-padding:30px;
-
+    background:#0057b8;
+    color:white;
+    text-align:center;
+    padding:30px;
 }
 
 .slogan{
-
-color:#ff2fa4;
-font-style:italic;
-
+    color:#ff2fa4;
+    font-style:italic;
 }
 
+/* ===== MENÚ PROFE ===== */
 nav{
-
-background:black;
-
+    background:black;
 }
 
-nav ul{
-
-list-style:none;
-padding:10px;
-margin:0;
-text-align:center;
-
+.menu{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    list-style:none;
+    margin:0;
+    padding:10px;
+    gap:20px;
+    font-family: 'Orbitron', sans-serif;
 }
 
-nav li{
-
-display:inline;
-margin:15px;
-
+.menu li{
+    position: relative;
 }
 
-nav a{
-
-color:white;
-text-decoration:none;
-font-weight:bold;
-
+.menu li a{
+    display:block;
+    padding:15px 20px;
+    color:rgb(197, 11, 73);
+    text-decoration:none;
 }
 
+/* Hover */
+.menu li a:hover{
+    color:#b61324;
+    text-shadow: 0 0 10px #c71c1c;
+}
+
+/* ===== SUBMENÚ ===== */
+.submenu{
+    display:none;
+    position:absolute;
+    background:#d2e445;
+    list-style:none;
+    padding:0;
+    min-width:150px;
+}
+
+.submenu li a{
+    padding:10px;
+    color:black;
+}
+
+/* Mostrar submenu */
+.dropdown:hover .submenu{
+    display:block;
+}
+
+/* ===== CONTENEDOR FLEX ===== */
+.contenedor{
+    display:flex;
+    align-items:center;
+    justify-content:space-around;
+    gap:40px;
+    flex-wrap:wrap;
+}
+
+/* ===== SECCIONES ===== */
 section{
-
-background:white;
-margin:20px;
-padding:30px;
-
+    background:white;
+    margin:20px;
+    padding:30px;
+    border-radius:10px;
 }
 
 h2{
-
-color:#0057b8;
-
+    color:#0057b8;
 }
 
 .lista-recursos li{
-
-margin:8px 0;
-
+    margin:8px 0;
 }
 
+/* ===== IMÁGENES ===== */
 img{
-
-width:300px;
-margin-top:15px;
-border-radius:5px;
-
+    width:300px;
+    margin-top:15px;
+    border-radius:5px;
 }
 
+/* ===== FOOTER ===== */
 footer{
-
-background:black;
-color:white;
-text-align:center;
-padding:15px;
-
+    background:black;
+    color:white;
+    text-align:center;
+    padding:15px;
 }
 
 footer a{
-
-color:#ff2fa4;
-text-decoration:none;
-
+    color:#ff2fa4;
+    text-decoration:none;
 }
 
+/* ===== FORMULARIO ===== */
 input, select, textarea{
-
-width:300px;
-padding:8px;
-margin-top:5px;
-
+    width:300px;
+    padding:8px;
+    margin-top:5px;
 }
 
 button{
-
-background:#0057b8;
-color:white;
-border:none;
-padding:10px 15px;
-cursor:pointer;
+    background:#0057b8;
+    color:white;
+    border:none;
+    padding:10px 15px;
+    cursor:pointer;
+}
 
 }
