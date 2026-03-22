@@ -4,7 +4,11 @@
 <head>
 <meta charset="UTF-8">
 <title>Profe Diani</title>
-<link rel="stylesheet" href="../css/estilos.css">
+
+<link rel="stylesheet" href="css/estilos.css">
+
+<!-- Fuente del profe -->
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -15,11 +19,29 @@
 </header>
 
 <nav>
-<ul>
+<ul class="menu">
 <li><a href="#inicio">Inicio</a></li>
-<li><a href="#recursos">Recursos</a></li>
+
+<li class="dropdown">
+<a href="#recursos">Recursos ▾</a>
+<ul class="submenu">
+<li><a href="#">Lectura</a></li>
+<li><a href="#">Gramática</a></li>
+<li><a href="#">Literatura</a></li>
+</ul>
+</li>
+
 <li><a href="#evaluaciones">Evaluaciones y Guías</a></li>
-<li><a href="#sobre">Sobre la profesora</a></li>
+
+<li class="dropdown">
+<a href="#sobre">Sobre la profesora ▾</a>
+<ul class="submenu">
+<li><a href="#">Misión</a></li>
+<li><a href="#">Visión</a></li>
+<li><a href="#">Valores</a></li>
+</ul>
+</li>
+
 <li><a href="html/contacto.html">Contacto</a></li>
 </ul>
 </nav>
@@ -28,15 +50,22 @@
 
 <h2>Bienvenidos</h2>
 
+<div class="contenedor">
+
+<div class="texto-caja">
 <p>
 Este espacio educativo está diseñado para apoyar el aprendizaje de lengua castellana
 en estudiantes de bachillerato desde grado sexto hasta grado once.
 </p>
+</div>
 
-<img src="../images/lectura.jpg" alt="Lectura">
+<div class="imagen-caja">
+<img src="images/lectura.jpg" alt="Lectura">
+</div>
+
+</div>
 
 </section>
-
 
 <section id="recursos">
 
@@ -51,10 +80,9 @@ en estudiantes de bachillerato desde grado sexto hasta grado once.
 <li>Redacción</li>
 </ul>
 
-<img src="../images/literatura.jpg" alt="Literatura">
+<img src="images/literatura.jpg" alt="Literatura">
 
 </section>
-
 
 <section id="evaluaciones">
 
@@ -73,10 +101,9 @@ Colombia Aprende
 </a>.
 </p>
 
-<img src="../images/libros.jpg" alt="Libros">
+<img src="images/libros.jpg" alt="Libros">
 
 </section>
-
 
 <section id="sobre">
 
@@ -98,15 +125,13 @@ Correo:
 
 </section>
 
-
 <footer>
-
 <p>
 © 2026 Profe Diani - Desarrollado por 
 <a href="https://wa.me/573136373335" target="_blank">Deiner Gonzalez</a>
 </p>
-
 </footer>
 
 </body>
+</html>
 </html>
